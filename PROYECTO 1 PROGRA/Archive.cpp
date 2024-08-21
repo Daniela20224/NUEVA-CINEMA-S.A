@@ -20,7 +20,7 @@ void Archive::showMenu() {
 }
 
 void Archive::showAbout() {
-    std::cout << "Sistema desarrollado por Alison.\n";
+    std::cout << "* Este sistema ha sido desarrollado por la Ingeniera Alison Espinoza *\n\n";
 }
 
 void Archive::exit() {

@@ -4,7 +4,7 @@
 void Menu::showMainMenu() {
     int option;
     do {
-        std::cout << "MENU PRINCIPAL\n";
+       
         std::cout << "1. Archivo\n2. Mantenimiento\n3. Reserva\n4. Venta\n5. Salir\n";
         std::cout << "Seleccione una opción: ";
         std::cin >> option;

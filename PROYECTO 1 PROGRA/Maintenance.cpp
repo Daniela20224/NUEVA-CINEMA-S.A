@@ -23,6 +23,7 @@ void Maintenance::showMenu() {
 }
 
 void Maintenance::manageMovies() {
+    std::cout << "";
  }
 
 void Maintenance::manageRooms() {
