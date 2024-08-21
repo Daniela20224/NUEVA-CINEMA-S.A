@@ -37,7 +37,6 @@ void Menu::showArchiveMenu() {
 }
 
 void Menu::showMaintenanceMenu() {
-    Maintenance maintenance;
     maintenance.showMenu();
 }
 

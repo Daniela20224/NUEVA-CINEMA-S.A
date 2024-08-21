@@ -8,6 +8,8 @@
 #include "Sale.h"
 
 class Menu {
+private:
+    Maintenance maintenance;  
 public:
     void showMainMenu();
     void showArchiveMenu();

@@ -1,8 +1,7 @@
 #include "Movie.h"
 #include <iostream>
 
-
-Movie::Movie(const std::string& name, int yeara, int duration, const std::string& country, const std::string& review)
+Movie::Movie(const std::string& name, int year, int duration, const std::string& country, const std::string& review)
     : name(name), year(year), duration(duration), country(country), review(review) {}
 
 void Movie::showInformation() const {
