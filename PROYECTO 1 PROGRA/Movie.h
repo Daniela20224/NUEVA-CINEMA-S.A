@@ -7,8 +7,9 @@ class Movie {
 public:
     Movie(const std::string& name, int year, int duration, const std::string& country, const std::string& review);
 
-    void showInformation() const;
+    void showInformationOfMovies() const;
 
+    //getters y setters
     std::string getName() const;
     void setName(const std::string& name);
 

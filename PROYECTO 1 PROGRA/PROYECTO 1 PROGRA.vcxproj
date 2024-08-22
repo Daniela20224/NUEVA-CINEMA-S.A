@@ -136,6 +136,7 @@
     <ClCompile Include="Reservation.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="Room.cpp" />
     <ClCompile Include="Sale.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -144,6 +145,7 @@
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Movie.h" />
     <ClInclude Include="Reservation.h" />
+    <ClInclude Include="Room.h" />
     <ClInclude Include="Sale.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

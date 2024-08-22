@@ -4,7 +4,7 @@
 Movie::Movie(const std::string& name, int year, int duration, const std::string& country, const std::string& review)
     : name(name), year(year), duration(duration), country(country), review(review) {}
 
-void Movie::showInformation() const {
+void Movie::showInformationOfMovies() const {
     std::cout << "Nombre: " << name << std::endl;
     std::cout << "Año: " << year << std::endl;
     std::cout << "Duración: " << duration << " minutos" << std::endl;
