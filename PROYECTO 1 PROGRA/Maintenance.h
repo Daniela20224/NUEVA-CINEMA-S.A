@@ -3,13 +3,14 @@
 #define MAINTENANCE_H
 #include "Movie.h"
 #include "Room.h"
+#include "Schedule.h"
 #include <vector>
 
 class Maintenance {
 private:
     std::vector<Movie> movies;
     std::vector<Room> rooms;
-   // std::vector<Schedule> schedule;
+    std::vector<Schedule> schedule;
 public:
     void showMenu();
     void addMovie();
@@ -19,7 +20,7 @@ public:
     void showRoom();
     void manageRooms();
     void addSchedules();
-    void showSchedules();
+    void showSchedule();
     void manageSchedules();
 };
 

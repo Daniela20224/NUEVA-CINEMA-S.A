@@ -3,6 +3,7 @@
 #include <string>
 #include <vector>  
 
+
 void Maintenance::showMenu() {
     int option;
     std::cout << "1. Películas\n2. Salas\n3. Horarios\n";
@@ -55,7 +56,7 @@ void Maintenance::addMovie() {
     movies.push_back(myMovie);
 
 
-    std::cout << "Película añadida: " << name << std::endl;
+    std::cout << "La película " << name << "ha sido agregada exitosamente "<<std::endl;
     
 }
 
@@ -108,7 +109,7 @@ void Maintenance::addRooms() {
   
     Room myRoom(number, seats, price);
     rooms.push_back(myRoom);
-    std::cout << "La sala" << number <<" ha sido añadida"<< std::endl;
+    std::cout << "La sala" << number <<" ha sido añadida exitosamente"<< std::endl;
 
 }
 
@@ -140,6 +141,60 @@ void Maintenance::manageRooms() {
     }
 }
 
-void Maintenance::manageSchedules() {
 
+
+void Maintenance::addSchedules() {
+    std::string name;
+    int date;
+    int startTime;
+    int finalTime;
+
+    std::cin.ignore();
+
+    std::cout << "Ingrese la fecha de la película (**/**/****): ";
+    std::cin >> date;
+    std::cin.ignore();
+
+    std::cout << "Ingrese la hora de inicio de la película: ";
+    std::cin >> startTime;
+    std::cin.ignore();
+
+    std::cout << "Ingrese la hora de finalización de la pelicula: ";
+    std::cin >> finalTime;
+    std::cin.ignore();
+
+    Schedule mySchedule(date, startTime, finalTime);
+    schedule.push_back(mySchedule);
+
+
+    std::cout << "El horario ha sido añadido existosamente: " << std::endl;
 }
+
+void Maintenance::showSchedule() {
+    std::cout << "\n--- Horarios ---\n";
+    for (const auto& schedule : schedules) {
+        schedule.showInformationOfSchedule();
+        std::cout << "----------------------------\n";
+    }
+}
+
+void Maintenance::manageSchedules() {
+    int option;
+    std::cout << "1. Añadir Horario\n2. Mostrar Horario\n";
+    std::cout << "Seleccione una opción: ";
+    std::cin >> option;
+
+    switch (option) {
+    case 1:
+        addSchedules();
+        break;
+    case 2:
+        showSchedule();
+        break;
+    default:
+        std::cout << "Opción inválida\n";
+        break;
+
+    
+    
+    }
