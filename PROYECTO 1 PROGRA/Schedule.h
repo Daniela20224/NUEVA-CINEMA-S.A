@@ -3,23 +3,23 @@
 
 class Schedule {
 public:
-	Schedule(int date, int startTime, int finalTime);
+    Schedule(int date, int startTime, int finalTime);
 
-	void showInformationOfSchedule()const;
+    void showInformationOfSchedule() const;
 
-	int getDate()const;
-	void setDate(int date);
+    int getDate() const;
+    void setDate(int date);
 
-	int setStartTime()const;
-	void getStartTime(int startTime);
+    int getStartTime() const;
+    void setStartTime(int startTime);
 
-	int setFinalTime()const;
-	void getFinalTime(int finalTime);
+    int getFinalTime() const;
+    void setFinalTime(int finalTime);
 
 private:
-	int date;
-	int startTime;
-	int finalTime;
+    int date;
+    int startTime;
+    int finalTime;
 
 };
 #endif

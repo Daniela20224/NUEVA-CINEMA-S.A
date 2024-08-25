@@ -144,7 +144,7 @@ void Maintenance::manageRooms() {
 
 
 void Maintenance::addSchedules() {
-    std::string name;
+
     int date;
     int startTime;
     int finalTime;
@@ -164,7 +164,7 @@ void Maintenance::addSchedules() {
     std::cin.ignore();
 
     Schedule mySchedule(date, startTime, finalTime);
-    schedule.push_back(mySchedule);
+    schedules.push_back(mySchedule);
 
 
     std::cout << "El horario ha sido añadido existosamente: " << std::endl;
@@ -194,7 +194,6 @@ void Maintenance::manageSchedules() {
     default:
         std::cout << "Opción inválida\n";
         break;
-
-    
+    }
     
     }

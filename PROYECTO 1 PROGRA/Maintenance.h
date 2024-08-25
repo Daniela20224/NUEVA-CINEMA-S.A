@@ -10,7 +10,7 @@ class Maintenance {
 private:
     std::vector<Movie> movies;
     std::vector<Room> rooms;
-    std::vector<Schedule> schedule;
+    std::vector<Schedule> schedules;
 public:
     void showMenu();
     void addMovie();

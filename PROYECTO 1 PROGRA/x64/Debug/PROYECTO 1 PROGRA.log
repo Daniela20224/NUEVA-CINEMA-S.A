@@ -1,17 +1,2 @@
 ﻿  Maintenance.cpp
-C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Maintenance.cpp(175,33): error C2065: 'schedules': identificador no declarado
-C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Maintenance.cpp(175,22): error C2530: 'schedule': se deben inicializar las referencias
-C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Maintenance.cpp(175,22): error C3531: 'schedule': un símbolo cuyo tipo contiene 'auto' debe tener un inicializador
-C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Maintenance.cpp(175,31): error C2143: error de sintaxis: falta ';' delante de ':'
-C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Maintenance.cpp(175,42): error C2143: error de sintaxis: falta ';' delante de ')'
-C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Maintenance.cpp(181,37): error C1075: "{": no se encontró ningún token coincidente
-  Schedule.cpp
-C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Schedule.cpp(16,15): error C2511: 'int Schedule::getStartTime(void)': la función miembro sobrecargada no se ha encontrado en 'Schedule'
-C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Schedule.cpp(16,39): error C2597: referencia no válida a miembro no static 'Schedule::startTime'
-C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Schedule.cpp(17,16): error C2511: 'void Schedule::setStartTime(int)': la función miembro sobrecargada no se ha encontrado en 'Schedule'
-C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Schedule.cpp(17,46): error C2671: 'Schedule::setStartTime': las funciones miembro static no tienen punteros 'this'
-C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Schedule.cpp(19,15): error C2511: 'int Schedule::getFinalTime(void) const': la función miembro sobrecargada no se ha encontrado en 'Schedule'
-C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Schedule.cpp(19,45): error C2597: referencia no válida a miembro no static 'Schedule::finalTime'
-C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Schedule.cpp(20,16): error C2511: 'void Schedule::setFinalTime(int)': la función miembro sobrecargada no se ha encontrado en 'Schedule'
-C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Schedule.cpp(20,46): error C2671: 'Schedule::setFinalTime': las funciones miembro static no tienen punteros 'this'
-  Generando código...
+  PROYECTO 1 PROGRA.vcxproj -> C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\x64\Debug\CINE.exe

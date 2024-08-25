@@ -13,7 +13,7 @@ void Schedule::showInformationOfSchedule()const {
 int Schedule::getDate()const { return date; }
 void Schedule::setDate(int date) { this->date = date; }
 
-int Schedule::getStartTime() { return startTime; }
+int Schedule::getStartTime() const{ return startTime; }
 void Schedule::setStartTime(int startTime) { this->startTime = startTime; }
 
 int Schedule::getFinalTime() const { return finalTime; }
