@@ -3,23 +3,36 @@
 
 class Schedule {
 public:
-	Schedule(int date, int startTime, int finalTime);
+    Schedule(int day, int month, int year, int startTime, int finalTime);
 
-	void showInformationOfSchedule()const;
+    void showInformationOfSchedule() const;
 
-	int getDate()const;
-	void setDate(int date);
+    // Métodos de verificación si son relevantes para la instancia
+    bool verifyLeapYear(int year) const;
+    bool verifyDate(int day, int month, int year) const;
 
-	int setStartTime()const;
-	void getStartTime(int startTime);
+    int getDay() const;
+    void setDay(int day);
 
-	int setFinalTime()const;
-	void getFinalTime(int finalTime);
+    int getMonth() const;
+    void setMonth(int month);
+
+    int getYear() const;
+    void setYear(int year);
+
+    int getStartTime() const;
+    void setStartTime(int startTime);
+
+    int getFinalTime() const;
+    void setFinalTime(int finalTime);
 
 private:
-	int date;
-	int startTime;
-	int finalTime;
+    int day;
+    int month;
+    int year;
+    int startTime;
+    int finalTime;
 
 };
-#endif
+#endif 
+

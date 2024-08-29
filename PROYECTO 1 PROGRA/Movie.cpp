@@ -8,7 +8,7 @@ void Movie::showInformationOfMovies() const {
     std::cout << "Nombre: " << name << std::endl;
     std::cout << "Año: " << year << std::endl;
     std::cout << "Duración: " << duration << " minutos" << std::endl;
-    std::cout << "País: " << country << std::endl;
+    std::cout << "Pais: " << country << std::endl;
     std::cout << "Reseña: " << review << std::endl;
 }
 

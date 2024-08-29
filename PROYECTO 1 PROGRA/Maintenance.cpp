@@ -35,14 +35,14 @@ void Maintenance::addMovie() {
 
     std::cin.ignore();  
 
-    std::cout << "Ingrese el nombre de la película: ";
+    std::cout << "Ingrese el nombre de la pelicula: ";
     std::getline(std::cin, name);
 
     std::cout << "Ingrese el año de la película: ";
     std::cin >> year;
     std::cin.ignore();  
 
-    std::cout << "Ingrese la duración de la película (en minutos): ";
+    std::cout << "Ingrese la duración de la pelicula (en minutos): ";
     std::cin >> duration;
     std::cin.ignore();
 
@@ -70,7 +70,7 @@ void Maintenance::showMovies(){
 
 void Maintenance::manageMovies() {
     int option;
-    std::cout << "1. Añadir Películas\n2. Mostrar Películas\n";
+    std::cout << "1. Agregar Peliculas\n2. Mostrar Peliculas\n";
     std::cout << "Seleccione una opción: ";
     std::cin >> option;
 
@@ -144,16 +144,30 @@ void Maintenance::manageRooms() {
 
 
 void Maintenance::addSchedules() {
-    std::string name;
-    int date;
+   
+    int day, month, year;
     int startTime;
     int finalTime;
 
     std::cin.ignore();
+ 
+    std::cout << "Introduce el dia: ";
+    std::cin >> day;
+    std::cout << "Introduce el mes: ";
+    std::cin >> month;
+    std::cout << "Introduce el año: ";
+    std::cin >> year;
 
-    std::cout << "Ingrese la fecha de la película (**/**/****): ";
-    std::cin >> date;
-    std::cin.ignore();
+   bool Maintenance::verifyDate(int day, int month, int year) {
+        if (get.verifyDate(day, month, year)) {
+            std::cout << "La fecha es válida." << std::endl;
+        }
+        else {
+            std::cout << "La fecha no es válida." << std::endl;
+        }
+        return true; 
+    }
+
 
     std::cout << "Ingrese la hora de inicio de la película: ";
     std::cin >> startTime;
@@ -163,8 +177,8 @@ void Maintenance::addSchedules() {
     std::cin >> finalTime;
     std::cin.ignore();
 
-    Schedule mySchedule(date, startTime, finalTime);
-    schedule.push_back(mySchedule);
+    Schedule mySchedule(day,month, year, startTime, finalTime);
+    schedules.push_back(mySchedule);
 
 
     std::cout << "El horario ha sido añadido existosamente: " << std::endl;
@@ -194,7 +208,6 @@ void Maintenance::manageSchedules() {
     default:
         std::cout << "Opción inválida\n";
         break;
-
-    
+    }
     
     }

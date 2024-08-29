@@ -1,6 +1,5 @@
 #pragma once
-#ifndef MAINTENANCE_H
-#define MAINTENANCE_H
+
 #include "Movie.h"
 #include "Room.h"
 #include "Schedule.h"
@@ -10,7 +9,8 @@ class Maintenance {
 private:
     std::vector<Movie> movies;
     std::vector<Room> rooms;
-    std::vector<Schedule> schedule;
+    std::vector<Schedule> schedules;
+
 public:
     void showMenu();
     void addMovie();
@@ -22,6 +22,9 @@ public:
     void addSchedules();
     void showSchedule();
     void manageSchedules();
+
+    bool verifyLeapYear(int year);
+    bool verifyDate(int day, int month, int year) ;
+   
 };
 
-#endif 

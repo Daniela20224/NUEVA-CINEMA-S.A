@@ -1,0 +1,99 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/biblo-cc/source/repos/proyecto 1 progra/proyecto 1 progra/main.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "3af70dc6319d1c523b0807c99d4ccff86579881c12a63cadf7e804f598d9a74c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/biblo-cc/source/repos/proyecto 1 progra/proyecto 1 progra/menu.h"
+          },
+          "hashes": {
+            "sha-256": "0905866be6a99b37bc549263dba952dcc15c96f11e7e3da0a7f7ae0030e23ce1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/biblo-cc/source/repos/proyecto 1 progra/proyecto 1 progra/archive.h"
+          },
+          "hashes": {
+            "sha-256": "0ba38070d82e0558f06001e68b5ead9a1e1a1febab74333155691e7b2f07e028"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/biblo-cc/source/repos/proyecto 1 progra/proyecto 1 progra/maintenance.h"
+          },
+          "hashes": {
+            "sha-256": "df319f29f7924f6e1814a6f979b5a86022cbb882602f16c7e0f5a7c94948137b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/biblo-cc/source/repos/proyecto 1 progra/proyecto 1 progra/movie.h"
+          },
+          "hashes": {
+            "sha-256": "fed253d0ec759f4d2d1b2d28db07fa76ee8b5b083401780eae9b8bc57ab64607"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/biblo-cc/source/repos/proyecto 1 progra/proyecto 1 progra/room.h"
+          },
+          "hashes": {
+            "sha-256": "bcabe24318561e8dad6bad47adfb8864299aa8df9af7f70c19c9cb6b94439a8f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/biblo-cc/source/repos/proyecto 1 progra/proyecto 1 progra/schedule.h"
+          },
+          "hashes": {
+            "sha-256": "844c00947acc9095b7feced450301a96868463d3cf5b9907931f344ad7daca17"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/biblo-cc/source/repos/proyecto 1 progra/proyecto 1 progra/reservation.h"
+          },
+          "hashes": {
+            "sha-256": "8fa8d7cad7d18e3b7554c4e43104a4518108e7b9b79fa7a16f68edc4374beba4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/biblo-cc/source/repos/proyecto 1 progra/proyecto 1 progra/sale.h"
+          },
+          "hashes": {
+            "sha-256": "9fc37b70f530d9dcb5300ada22d717b94a09c917e3b6597bc220cffdbc0908d4"
+          }
+        }
+      ]
+    }
+  ]
+}
