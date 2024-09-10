@@ -15,7 +15,7 @@ public:
     void showArchiveMenu();
     void showMaintenanceMenu();
     void showReservationMenu();
-    void showSaleMenu();
+    void showSaleMenu(const Maintenance& maintenance);
 };
 
 #endif 

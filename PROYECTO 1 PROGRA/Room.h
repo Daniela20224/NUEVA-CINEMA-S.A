@@ -1,27 +1,36 @@
 #ifndef ROOM_H
 #define ROOM_H
+#include <vector>
+#include <array>
 
-class Room{
-
+class Room {
 public:
-	Room(int number, int seats, int price);
+    Room(int number, int seats, int price);
 
-	void showInformationOfRooms() const;
+    void showInformationOfRooms() const;
 
-	//getters y setters
-	int getNumber() const;
-	void setNumber(int number);
 
-	int getSeats() const;
-	void setSeats(int seats);
+    void showRoom() const;
 
-	int getPrice() const;
-	void setPrice(int price);
+    // getters y setters
+    int getNumber() const;
+    void setNumber(int number);
+
+    int getSeats() const;
+    void setSeats(int seats);
+
+    int getPrice() const;
+    void setPrice(int price);
+    std::vector<Schedule> schedules;
+
+    std::array<std::array<char, 8>, 8> seating;
 
 private:
-	int number;
-	int seats;
-	int price;
-
+    int number;
+    int seats;
+    int price;
 };
+
+
+
 #endif

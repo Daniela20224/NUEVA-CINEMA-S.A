@@ -157,15 +157,14 @@ void Maintenance::addSchedules() {
     std::cin >> month;
     std::cout << "Introduce el año: ";
     std::cin >> year;
+    Schedule tempSchedule(day, month, year, 0, 0);
 
-   bool Maintenance::verifyDate(int day, int month, int year) {
-        if (get.verifyDate(day, month, year)) {
-            std::cout << "La fecha es válida." << std::endl;
-        }
-        else {
-            std::cout << "La fecha no es válida." << std::endl;
-        }
-        return true; 
+    if (tempSchedule.verifyDate(day, month, year)) {
+        std::cout << "La fecha es válida." << std::endl;
+    }
+    else {
+        std::cout << "La fecha no es válida. No se añadirá el horario." << std::endl;
+        return;
     }
 
 
@@ -209,5 +208,58 @@ void Maintenance::manageSchedules() {
         std::cout << "Opción inválida\n";
         break;
     }
+
     
     }
+void Maintenance::conectMovieRoom() {
+    int index = 1;
+    int idMovie;
+    int idRoom;
+
+    for (const auto& movie : movies){
+        std::cout << "ID: "<<index;
+        movie.showInformationOfMovies();
+         index++;
+    }
+    std::cout << "Ingrese el ID de la pelicula: ";
+    std::cin >> idMovie;
+
+    //reiniciar index en 1
+    index = 1;
+    for (const auto& room : rooms) {
+        std::cout << "ID: " << index;
+        room.showInformationOfRooms();
+        index++;
+    }
+    std::cout << "Ingrese el ID de la sala: ";
+    std::cin >> idRoom;
+
+    //conectar la sala a las peliculas
+    this->movies[idMovie- 1].rooms.push_back(this->rooms[idRoom- 1]);
+}
+
+void Maintenance::conectRoomSchedule() {
+    int index = 1;
+    int idSchedule;
+    int idRoom;
+
+    for (const auto& room : room) {
+        std::cout << "ID: " << index;
+        room.showInformationOfMovies();
+        index++;
+    }
+    std::cout << "Ingrese el ID de la pelicula: ";
+    std::cin >> idSchedule;
+
+    index = 1;
+    for (const auto& room : schecule) {
+        std::cout << "ID: " << index;
+        schecule.showInformationOfschecule();
+        index++;
+    }
+    std::cout << "Ingrese el ID de la sala: ";
+    std::cin >> idRoom;
+
+    //conectar la sala a las peliculas
+    this->schedules[idMovie - 1].rooms.push_back(this->rooms[idRoom - 1]);
+}

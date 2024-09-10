@@ -1,11 +1,6 @@
-﻿  Archive.cpp
+﻿  Main.cpp
   Maintenance.cpp
-C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Maintenance.cpp(161,22): error C2601: 'Maintenance::verifyDate': las definiciones de funciones locales no son válidas
-C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Maintenance.cpp(162,13): error C2065: 'get': identificador no declarado
   Menu.cpp
-  Main.cpp
-  Movie.cpp
-  Room.cpp
   Sale.cpp
-  Schedule.cpp
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Menu.cpp(49,10): error C2512: 'Sale': no hay disponible un constructor predeterminado adecuado
   Generando código...

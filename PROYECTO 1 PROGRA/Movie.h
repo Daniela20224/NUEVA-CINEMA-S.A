@@ -25,6 +25,7 @@ public:
     std::string getReview() const;
     void setReview(const std::string& review);
 
+    std::vector<Room> rooms;
 private:
     std::string name;
     int year;

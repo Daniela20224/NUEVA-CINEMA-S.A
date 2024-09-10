@@ -2,9 +2,12 @@
 #include "Sale.h"
 #include <iostream>
 
+
+Sale::Sale() {}
+
 void Sale::showMenu() {
     int option;
-    std::cout << "1. Vender Película\n";
+    std::cout << "1. Comprar Película\n";
     std::cout << "Seleccione una opción: ";
     std::cin >> option;
 
@@ -16,5 +19,7 @@ void Sale::showMenu() {
     }
 }
 
-void Sale::makeSale() {
+void Sale::makeSale() 
+{
+   
 }

@@ -26,14 +26,14 @@ void Schedule::showInformationOfSchedule() const {
 }
 
 // Verificador de año bisiesto para comprobar la fecha
-bool verifyLeapYear(int year) {
+bool Schedule::verifyLeapYear(int year) {
     if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
         return true;
     return false;
 }
 
 // Verificador de fecha
-bool verifyDate(int day, int month, int year) {
+bool Schedule::verifyDate(int day, int month, int year) {
     if (year < 2000 || year > 2025) return false;
     if (month < 1 || month > 12) return false;
 

@@ -7,11 +7,12 @@
 
 class Maintenance {
 private:
-    std::vector<Movie> movies;
+   
     std::vector<Room> rooms;
     std::vector<Schedule> schedules;
 
 public:
+   
     void showMenu();
     void addMovie();
     void showMovies();
@@ -22,9 +23,11 @@ public:
     void addSchedules();
     void showSchedule();
     void manageSchedules();
-
-    bool verifyLeapYear(int year);
-    bool verifyDate(int day, int month, int year) ;
+  
+    void conectMovieRoom();
+    void conectRoomSchedule();
    
+    std::vector<Movie> movies;
+    std::vector<Room> rooms;
 };
 
