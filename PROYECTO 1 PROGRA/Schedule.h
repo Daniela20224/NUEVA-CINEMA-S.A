@@ -7,9 +7,9 @@ public:
 
     void showInformationOfSchedule() const;
 
-    // Métodos de verificación si son relevantes para la instancia
     bool verifyLeapYear(int year);
     bool verifyDate(int day, int month, int year);
+    bool verifyTime(int startTime, int finalTime);
 
     int getDay() const;
     void setDay(int day);
