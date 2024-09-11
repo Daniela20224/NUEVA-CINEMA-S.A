@@ -3,7 +3,6 @@
 #include <string>
 #include <vector>  
 
-
 void Maintenance::showMenu() {
     int option;
     std::cout << "1. Películas\n2. Salas\n3. Horarios\n";
@@ -22,7 +21,7 @@ void Maintenance::showMenu() {
         break;
     default:
         std::cout << "Opción inválida\n";
-        break;  
+        break;
     }
 }
 
@@ -33,16 +32,16 @@ void Maintenance::addMovie() {
     std::string country;
     std::string review;
 
-    std::cin.ignore();  
+    std::cin.ignore();
 
-    std::cout << "Ingrese el nombre de la pelicula: ";
+    std::cout << "Ingrese el nombre de la película: ";
     std::getline(std::cin, name);
 
     std::cout << "Ingrese el año de la película: ";
     std::cin >> year;
-    std::cin.ignore();  
+    std::cin.ignore();
 
-    std::cout << "Ingrese la duración de la pelicula (en minutos): ";
+    std::cout << "Ingrese la duración de la película (en minutos): ";
     std::cin >> duration;
     std::cin.ignore();
 
@@ -55,12 +54,10 @@ void Maintenance::addMovie() {
     Movie myMovie(name, year, duration, country, review);
     movies.push_back(myMovie);
 
-
-    std::cout << "La película " << name << "ha sido agregada exitosamente "<<std::endl;
-    
+    std::cout << "La película " << name << " ha sido agregada exitosamente " << std::endl;
 }
 
-void Maintenance::showMovies(){
+void Maintenance::showMovies() {
     std::cout << "\n--- Catálogo de Películas ---\n";
     for (const auto& movie : movies) {
         movie.showInformationOfMovies();
@@ -70,7 +67,7 @@ void Maintenance::showMovies(){
 
 void Maintenance::manageMovies() {
     int option;
-    std::cout << "1. Agregar Peliculas\n2. Mostrar Peliculas\n";
+    std::cout << "1. Agregar Películas\n2. Mostrar Películas\n";
     std::cout << "Seleccione una opción: ";
     std::cin >> option;
 
@@ -83,7 +80,7 @@ void Maintenance::manageMovies() {
         break;
     default:
         std::cout << "Opción inválida\n";
-        break;  
+        break;
     }
 }
 
@@ -91,10 +88,10 @@ void Maintenance::addRooms() {
     int number;
     int seats;
     int price;
-    
+
     std::cin.ignore();
 
-    std::cout << "Numero identificador de la sala: ";
+    std::cout << "Número identificador de la sala: ";
     std::cin >> number;
     std::cin.ignore();
 
@@ -106,23 +103,20 @@ void Maintenance::addRooms() {
     std::cin >> price;
     std::cin.ignore();
 
-  
     Room myRoom(number, seats, price);
     rooms.push_back(myRoom);
-    std::cout << "La sala" << number <<" ha sido añadida exitosamente"<< std::endl;
-
+    std::cout << "La sala " << number << " ha sido añadida exitosamente" << std::endl;
 }
 
 void Maintenance::showRoom() {
     std::cout << "\n--- Salas añadidas ---\n";
-    for (const auto& room: rooms) {
-        room.showInformationOfRooms(); 
+    for (const auto& room : rooms) {
+        room.showInformationOfRooms();
         std::cout << "----------------------------\n";
     }
 }
 
 void Maintenance::manageRooms() {
- 
     int option;
     std::cout << "1. Añadir Sala\n2. Mostrar Sala\n";
     std::cout << "Seleccione una opción: ";
@@ -144,19 +138,19 @@ void Maintenance::manageRooms() {
 
 
 void Maintenance::addSchedules() {
-   
-    int day, month, year;
     int startTime;
     int finalTime;
+    int day, month, year;
 
     std::cin.ignore();
- 
-    std::cout << "Introduce el dia: ";
+
+    std::cout << "Introduce el día: ";
     std::cin >> day;
     std::cout << "Introduce el mes: ";
     std::cin >> month;
     std::cout << "Introduce el año: ";
     std::cin >> year;
+
     Schedule tempSchedule(day, month, year, 0, 0);
 
     if (tempSchedule.verifyDate(day, month, year)) {
@@ -167,20 +161,18 @@ void Maintenance::addSchedules() {
         return;
     }
 
-
     std::cout << "Ingrese la hora de inicio de la película: ";
     std::cin >> startTime;
     std::cin.ignore();
 
-    std::cout << "Ingrese la hora de finalización de la pelicula: ";
+    std::cout << "Ingrese la hora de finalización de la película: ";
     std::cin >> finalTime;
     std::cin.ignore();
 
-    Schedule mySchedule(day,month, year, startTime, finalTime);
+    Schedule mySchedule(day, month, year, startTime, finalTime);
     schedules.push_back(mySchedule);
 
-
-    std::cout << "El horario ha sido añadido existosamente: " << std::endl;
+    std::cout << "El horario ha sido añadido exitosamente." << std::endl;
 }
 
 void Maintenance::showSchedule() {
@@ -208,58 +200,4 @@ void Maintenance::manageSchedules() {
         std::cout << "Opción inválida\n";
         break;
     }
-
-    
-    }
-void Maintenance::conectMovieRoom() {
-    int index = 1;
-    int idMovie;
-    int idRoom;
-
-    for (const auto& movie : movies){
-        std::cout << "ID: "<<index;
-        movie.showInformationOfMovies();
-         index++;
-    }
-    std::cout << "Ingrese el ID de la pelicula: ";
-    std::cin >> idMovie;
-
-    //reiniciar index en 1
-    index = 1;
-    for (const auto& room : rooms) {
-        std::cout << "ID: " << index;
-        room.showInformationOfRooms();
-        index++;
-    }
-    std::cout << "Ingrese el ID de la sala: ";
-    std::cin >> idRoom;
-
-    //conectar la sala a las peliculas
-    this->movies[idMovie- 1].rooms.push_back(this->rooms[idRoom- 1]);
-}
-
-void Maintenance::conectRoomSchedule() {
-    int index = 1;
-    int idSchedule;
-    int idRoom;
-
-    for (const auto& room : room) {
-        std::cout << "ID: " << index;
-        room.showInformationOfMovies();
-        index++;
-    }
-    std::cout << "Ingrese el ID de la pelicula: ";
-    std::cin >> idSchedule;
-
-    index = 1;
-    for (const auto& room : schecule) {
-        std::cout << "ID: " << index;
-        schecule.showInformationOfschecule();
-        index++;
-    }
-    std::cout << "Ingrese el ID de la sala: ";
-    std::cin >> idRoom;
-
-    //conectar la sala a las peliculas
-    this->schedules[idMovie - 1].rooms.push_back(this->rooms[idRoom - 1]);
 }

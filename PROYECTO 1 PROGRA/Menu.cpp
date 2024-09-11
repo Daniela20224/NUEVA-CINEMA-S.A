@@ -4,7 +4,7 @@
 void Menu::showMainMenu() {
     int option;
     do {
-       
+
         std::cout << "1. Archivo\n2. Mantenimiento\n3. Reserva\n4. Venta\n5. Salir\n";
         std::cout << "Seleccione una opción: ";
         std::cin >> option;
@@ -20,7 +20,7 @@ void Menu::showMainMenu() {
             showReservationMenu();
             break;
         case 4:
-            showSaleMenu(this->maintenance);
+            showSaleMenu();
             break;
         case 5:
             std::cout << "Saliendo...\n";
@@ -45,7 +45,7 @@ void Menu::showReservationMenu() {
     reservation.showMenu();
 }
 
-void Menu::showSaleMenu(const Maintenance& maintenance) {
-    Sale sale(maintenance);
+void Menu::showSaleMenu() {
+    Sale sale;  
     sale.showMenu();
 }

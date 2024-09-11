@@ -7,7 +7,7 @@
 
 class Maintenance {
 private:
-   
+    std::vector<Movie> movies;
     std::vector<Room> rooms;
     std::vector<Schedule> schedules;
 
@@ -24,10 +24,7 @@ public:
     void showSchedule();
     void manageSchedules();
   
-    void conectMovieRoom();
-    void conectRoomSchedule();
    
-    std::vector<Movie> movies;
-    std::vector<Room> rooms;
+
 };
 

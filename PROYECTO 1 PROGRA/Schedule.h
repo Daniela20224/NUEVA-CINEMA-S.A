@@ -23,13 +23,16 @@ public:
     int getStartTime() const;
     void setStartTime(int startTime);
 
+
     int getFinalTime() const;
     void setFinalTime(int finalTime);
 
 private:
+
     int day;
     int month;
     int year;
+
     int startTime;
     int finalTime;
 

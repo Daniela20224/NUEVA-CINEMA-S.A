@@ -21,9 +21,7 @@ public:
 
     int getPrice() const;
     void setPrice(int price);
-    std::vector<Schedule> schedules;
 
-    std::array<std::array<char, 8>, 8> seating;
 
 private:
     int number;
