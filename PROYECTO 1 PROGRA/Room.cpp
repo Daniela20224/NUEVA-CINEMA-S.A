@@ -11,9 +11,10 @@ void Room::setSeats(int seats) { this->seats = seats; }
 int Room::getPrice() const { return price; }
 void Room::setPrice(int price) { this->price = price; }
 
+
 Room::Room(int number, int seats, int price)
     : number(number), seats(seats), price(price) {
-    char seating[6][6];
+    char seating[8][8];
     for (int i = 0; i < 8; ++i) {
         for (int j = 0; j < 8; ++j) {
             seating[i][j] = 'O';  
@@ -30,19 +31,19 @@ void Room::showInformationOfRooms() const {
 
 
 void Room::showRoom() const {
-    std::cout << "\n--- Estado de la taquilla (6x6) ---\n";
+    std::cout << "\n--- Estado de la taquilla (8x8) ---\n";
 
-    char seating[6][6];
+    char seating[8][8];
     std::cout << "   ";
-    for (int col = 0; col < 6; ++col) {
+    for (int col = 0; col < 8; ++col) {
         std::cout << col << " ";
     }
     std::cout << std::endl;
 
 
-    for (int i = 0; i < 6; ++i) {
+    for (int i = 0; i < 8; ++i) {
         std::cout << static_cast<char>('A' + i) << "  ";
-        for (int j = 0; j < 6; ++j) {
+        for (int j = 0; j < 8; ++j) {
             std::cout << seating[i][j] << " ";
         }
         std::cout << std::endl;

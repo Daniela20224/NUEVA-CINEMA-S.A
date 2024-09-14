@@ -5,11 +5,6 @@ class Schedule {
 public:
     Schedule(int day, int month, int year, int startTime, int finalTime);
 
-    void showInformationOfSchedule() const;
-
-    bool verifyLeapYear(int year);
-    bool verifyDate(int day, int month, int year);
-    bool verifyTime(int startTime, int finalTime);
 
     int getDay() const;
     void setDay(int day);
@@ -26,6 +21,13 @@ public:
 
     int getFinalTime() const;
     void setFinalTime(int finalTime);
+
+
+    void showInformationOfSchedule() const;
+
+    bool verifyLeapYear(int year);
+    bool verifyDate(int day, int month, int year);
+
 
 private:
 

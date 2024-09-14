@@ -7,12 +7,7 @@ class Room {
 public:
     Room(int number, int seats, int price);
 
-    void showInformationOfRooms() const;
-
-
-    void showRoom() const;
-
-    // getters y setters
+     // getters y setters
     int getNumber() const;
     void setNumber(int number);
 
@@ -22,6 +17,13 @@ public:
     int getPrice() const;
     void setPrice(int price);
 
+    void showInformationOfRooms() const;
+
+    std::vector<Schedule> schedules;
+
+    std::array<std::array<char, 8>, 8> seating;
+
+    void showRoom() const;
 
 private:
     int number;

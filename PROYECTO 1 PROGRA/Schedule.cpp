@@ -43,27 +43,9 @@ bool Schedule::verifyDate(int day, int month, int year) {
     return true;
 }
 
-bool Schedule::verifyTime(int startTime, int finalTime) {
-
-    if (startTime <= 12 || startTime > 0) {
-        std::cout << startTime << "am" << std::endl;
-    }
-    else {
-        (startTime > 1 || startTime < 24);
-        std::cout << startTime << "pm" << std::endl;
-    }
-
-    if (finalTime <= 12 || finalTime > 0) {
-        std::cout << finalTime << "am" << std::endl;
-    }
-    else {
-        (finalTime > 1 || finalTime < 24);
-        std::cout << finalTime << "pm" << std::endl;
-    }
-}
 
 void Schedule::showInformationOfSchedule() const {
     std::cout << "Fecha: " << day << "/" << month << "/" << year << std::endl;
-    std::cout << "Hora de inicio de la película: " << startTime << std::endl;
+    std::cout << "Hora de inicio de la película: " << startTime <<std::endl;
     std::cout << "Hora de finalización de la película: " << finalTime << std::endl;
 }

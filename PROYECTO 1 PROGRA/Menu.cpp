@@ -20,7 +20,7 @@ void Menu::showMainMenu() {
             showReservationMenu();
             break;
         case 4:
-            showSaleMenu();
+            showSaleMenu(this->maintenance);
             break;
         case 5:
             std::cout << "Saliendo...\n";
@@ -45,7 +45,7 @@ void Menu::showReservationMenu() {
     reservation.showMenu();
 }
 
-void Menu::showSaleMenu() {
-    Sale sale;  
+void Menu::showSaleMenu(const Maintenance& maintenance) {
+    Sale sale;
     sale.showMenu();
 }

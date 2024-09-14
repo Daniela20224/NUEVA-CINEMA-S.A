@@ -1,9 +1,34 @@
-﻿  Menu.cpp
+﻿  Maintenance.cpp
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Movie.h(28,17): error C2065: 'Room': identificador no declarado
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Movie.h(28,10): error C2923: 'std::vector': 'Room' no es un argumento de tipo plantilla válido para el parámetro '_Ty'
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Movie.h(28,10): error C2976: "std::vector": no hay suficientes argumentos de plantilla
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Room.h(22,17): error C2065: 'Schedule': identificador no declarado
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Room.h(22,10): error C2923: 'std::vector': 'Schedule' no es un argumento de tipo plantilla válido para el parámetro '_Ty'
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Room.h(22,10): error C2976: "std::vector": no hay suficientes argumentos de plantilla
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Maintenance.cpp(229,37): error C2663: 'std::vector<_Ty,_Alloc>::push_back': ninguna función sobrecargada tiene una conversión válida para el puntero 'this'
+  Menu.cpp
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Movie.h(28,17): error C2065: 'Room': identificador no declarado
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Movie.h(28,10): error C2923: 'std::vector': 'Room' no es un argumento de tipo plantilla válido para el parámetro '_Ty'
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Movie.h(28,10): error C2976: "std::vector": no hay suficientes argumentos de plantilla
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Room.h(22,17): error C2065: 'Schedule': identificador no declarado
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Room.h(22,10): error C2923: 'std::vector': 'Schedule' no es un argumento de tipo plantilla válido para el parámetro '_Ty'
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Room.h(22,10): error C2976: "std::vector": no hay suficientes argumentos de plantilla
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Menu.cpp(45,17): error C2660: 'Reservation::showMenu': la función no acepta 0 argumentos
   Main.cpp
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Movie.h(28,17): error C2065: 'Room': identificador no declarado
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Movie.h(28,10): error C2923: 'std::vector': 'Room' no es un argumento de tipo plantilla válido para el parámetro '_Ty'
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Movie.h(28,10): error C2976: "std::vector": no hay suficientes argumentos de plantilla
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Room.h(22,17): error C2065: 'Schedule': identificador no declarado
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Room.h(22,10): error C2923: 'std::vector': 'Schedule' no es un argumento de tipo plantilla válido para el parámetro '_Ty'
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Room.h(22,10): error C2976: "std::vector": no hay suficientes argumentos de plantilla
+  Movie.cpp
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Movie.h(28,17): error C2065: 'Room': identificador no declarado
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Movie.h(28,10): error C2923: 'std::vector': 'Room' no es un argumento de tipo plantilla válido para el parámetro '_Ty'
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Movie.h(28,10): error C2976: "std::vector": no hay suficientes argumentos de plantilla
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Movie.cpp(5,84): error C2512: 'std::vector': no hay disponible un constructor predeterminado adecuado
   Room.cpp
-  Schedule.cpp
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Room.h(22,17): error C2065: 'Schedule': identificador no declarado
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Room.h(22,10): error C2923: 'std::vector': 'Schedule' no es un argumento de tipo plantilla válido para el parámetro '_Ty'
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Room.h(22,10): error C2976: "std::vector": no hay suficientes argumentos de plantilla
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Room.cpp(16,50): error C2512: 'std::vector': no hay disponible un constructor predeterminado adecuado
   Generando código...
-  Reservation.cpp
-C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Schedule.h(1,1): warning C4828: El archivo contiene un carácter que comienza en el desplazamiento 0xc9 y que no es válido en el juego de caracteres del origen actual (página de códigos 65001).
-C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Schedule.h(1,1): warning C4828: El archivo contiene un carácter que comienza en el desplazamiento 0xdd y que no es válido en el juego de caracteres del origen actual (página de códigos 65001).
-  PROYECTO 1 PROGRA.vcxproj -> C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\x64\Debug\CINE.exe

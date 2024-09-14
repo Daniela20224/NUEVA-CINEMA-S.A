@@ -6,7 +6,7 @@
 
 class Reservation {
 public:
-    void showMenu();
+    void showMenu(const Maintenance& maintenance);
     void makeReservation();
 
 private:

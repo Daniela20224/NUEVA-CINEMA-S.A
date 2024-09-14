@@ -161,11 +161,11 @@ void Maintenance::addSchedules() {
         return;
     }
 
-    std::cout << "Ingrese la hora de inicio de la película: ";
+    std::cout << "Ingrese la hora de inicio de la película (formato 24 horas): ";
     std::cin >> startTime;
     std::cin.ignore();
 
-    std::cout << "Ingrese la hora de finalización de la película: ";
+    std::cout << "Ingrese la hora de finalización de la película (formato 24 horas): ";
     std::cin >> finalTime;
     std::cin.ignore();
 
@@ -201,3 +201,60 @@ void Maintenance::manageSchedules() {
         break;
     }
 }
+
+void Maintenance::conectMovieRoom() {
+    int index = 1;
+    int idMovie;
+    int idRoom;
+
+    for (const auto& movie : movies) {
+        std::cout << "ID: " << index;
+        movie.showInformationOfMovies();
+        index++;
+    }
+    std::cout << "Ingrese el ID de la pelicula: ";
+    std::cin >> idMovie;
+
+    //reiniciar index en 1
+    index = 1;
+    for (const auto& room : rooms) {
+        std::cout << "ID: " << index;
+        room.showInformationOfRooms();
+        index++;
+    }
+    std::cout << "Ingrese el ID de la sala: ";
+    std::cin >> idRoom;
+
+    //conectar la sala a las peliculas
+    this->movies[idMovie - 1].rooms.push_back(this->rooms[idRoom - 1]);
+}
+
+//void Maintenance::conectRoomSchedule() {
+//    int index = 1;
+//    int idSchedule;
+//    int idRoom;
+//
+//    for (const auto& room : rooms) {
+//        std::cout << "ID: " << index;
+//        room.showInformationOfRooms();
+//        index++;
+//    }
+//    std::cout << "Ingrese el ID de la sala: ";
+//    std::cin >> idRoom;
+//
+//    index = 1;
+//    for (const auto& schedule : schedules) {
+//        std::cout << "ID: " << index;
+//        schedule.showInformationOfSchedule();
+//        index++;
+//    }
+//    std::cout << "Ingrese el ID de los horarios: ";
+//    std::cin >> idSchedule;
+//
+//
+//
+//
+//    //conectar horarios con salas
+//    this->rooms[idRoom - 1].schedules.push_back (this->schedules[idSchedule - 1]);
+//}
+//

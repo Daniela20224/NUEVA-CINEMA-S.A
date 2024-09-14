@@ -1,15 +1,13 @@
 #ifndef MOVIE_H
 #define MOVIE_H
-
+#include <vector>
 #include <string>
 
 class Movie {
 public:
     Movie(const std::string& name, int year, int duration, const std::string& country, const std::string& review);
 
-    void showInformationOfMovies() const;
-
-    //getters y setters
+      //getters y setters
     std::string getName() const;
     void setName(const std::string& name);
 
@@ -25,7 +23,10 @@ public:
     std::string getReview() const;
     void setReview(const std::string& review);
 
-    
+    void showInformationOfMovies() const;
+
+    std::vector<Room> rooms;
+
 private:
     std::string name;
     int year;
