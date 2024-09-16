@@ -1,0 +1,74 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable \"Schedule::verifyDaysOfMonth\" no está inicializada. Siempre debe inicializarse una variable miembro (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/BIBLO-CC/source/repos/PROYECTO 1 PROGRA/PROYECTO 1 PROGRA/Schedule.cpp"
+                },
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 11
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Schedule::{ctor}",
+                  "decoratedName": "??0Schedule@@QEAA@HHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Schedule::verifyDaysOfMonth"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/BIBLO-CC/source/repos/PROYECTO 1 PROGRA/PROYECTO 1 PROGRA/Schedule.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "486f6352baa4b1a035350056921bfd64eb7d70b49b7bc5e7ea7da2edae3dd9ff"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/biblo-cc/source/repos/proyecto 1 progra/proyecto 1 progra/schedule.h"
+          },
+          "hashes": {
+            "sha-256": "844c00947acc9095b7feced450301a96868463d3cf5b9907931f344ad7daca17"
+          }
+        }
+      ]
+    }
+  ]
+}

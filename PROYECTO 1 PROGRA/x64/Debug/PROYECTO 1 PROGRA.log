@@ -1,0 +1,22 @@
+﻿  Main.cpp
+  Maintenance.cpp
+  Menu.cpp
+  Movie.cpp
+  Room.cpp
+  Sale.cpp
+  Generando código...
+  Reservation.cpp
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Reservation.cpp(1,1): warning C4828: El archivo contiene un carácter que comienza en el desplazamiento 0x5ba y que no es válido en el juego de caracteres del origen actual (página de códigos 65001).
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Reservation.cpp(1,1): warning C4828: El archivo contiene un carácter que comienza en el desplazamiento 0x840 y que no es válido en el juego de caracteres del origen actual (página de códigos 65001).
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Reservation.cpp(1,1): warning C4828: El archivo contiene un carácter que comienza en el desplazamiento 0xf8c y que no es válido en el juego de caracteres del origen actual (página de códigos 65001).
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Reservation.cpp(1,1): warning C4828: El archivo contiene un carácter que comienza en el desplazamiento 0x1778 y que no es válido en el juego de caracteres del origen actual (página de códigos 65001).
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Reservation.cpp(1,1): warning C4828: El archivo contiene un carácter que comienza en el desplazamiento 0x1811 y que no es válido en el juego de caracteres del origen actual (página de códigos 65001).
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Reservation.cpp(1,1): warning C4828: El archivo contiene un carácter que comienza en el desplazamiento 0x1a8f y que no es válido en el juego de caracteres del origen actual (página de códigos 65001).
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Reservation.cpp(1,1): warning C4828: El archivo contiene un carácter que comienza en el desplazamiento 0x1b45 y que no es válido en el juego de caracteres del origen actual (página de códigos 65001).
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Reservation.cpp(35,14): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Reservation.cpp(189,71): warning C4267: 'argumento': conversión de 'size_t' a '_Ty'; posible pérdida de datos
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Reservation.cpp(189,71): warning C4267:         with
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Reservation.cpp(189,71): warning C4267:         [
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Reservation.cpp(189,71): warning C4267:             _Ty=int
+C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\PROYECTO 1 PROGRA\Reservation.cpp(189,71): warning C4267:         ]
+  PROYECTO 1 PROGRA.vcxproj -> C:\Users\BIBLO-CC\source\repos\PROYECTO 1 PROGRA\x64\Debug\CINE.exe
