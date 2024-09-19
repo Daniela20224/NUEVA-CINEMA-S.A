@@ -24,7 +24,7 @@ Room::Room(char number, int seats, int price)
 
 
 void Room::showInformationOfRooms() const {
-    std::cout << "Numero identificador de la sala: " << number << std::endl;
+    std::cout << "Identificador de la sala: " << number << std::endl;
     std::cout << "Cantidad de butacas de la sala: " << seats << std::endl;
     std::cout << "Precio: " << price << " colones (por ticket)" << std::endl;
 }

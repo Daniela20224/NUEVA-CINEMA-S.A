@@ -10,6 +10,9 @@ public:
     Sale();
     void showMenu(Reservation& r);
     void makeSale();
+    void showSales();
+    
+
     Reservation reservation;
     struct mySale
     {
@@ -19,10 +22,8 @@ public:
 
         mySale(int _id, std::string _code, int _card)
             : id(_id), code(_code), card(_card) {}
-
-       
     };
-    void showSales();
+    
     std::vector<mySale>sales;
 
 

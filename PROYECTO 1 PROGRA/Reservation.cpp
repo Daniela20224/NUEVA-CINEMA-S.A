@@ -42,8 +42,8 @@ void Reservation::makeReservation() {
         this->maintenance->movies[i].showInformationOfMovies();
     }
 
-    std::cout << "----------------------------------------" << std::endl;
-    std::cout << "Ingrese el ID de la pelicula que desea ver: ";
+    std::cout << "------------------------------------------------" << std::endl;
+    std::cout << "Ingrese el ID de la pelicula que desea reservar: ";
     std::cin >> idMovie;
 
     if (idMovie < 1 || idMovie > size) {
@@ -51,29 +51,38 @@ void Reservation::makeReservation() {
         return;
     }
 
-    std::cout << "----------------------------------------" << std::endl;
-    std::cout << "Esta pelicula se exhibe en las siguientes salas\n";
+    std::cout << "---------------------------------------------------------" << std::endl;
+    std::cout << "**** Esta pelicula se exhibe en las siguientes salas ****\n\n";
     int idRoom;
     int index = 1;
     for (const auto& room : this->maintenance->movies[idMovie - 1].rooms) {
         std::cout << "ID de la sala: " << index << std::endl;
         room.showInformationOfRooms();
         index++;
+
     }
+
+    std::cout << "----------------------------------------" << std::endl;
     std::cout << "Ingrese el ID de la sala: ";
     std::cin >> idRoom;
 
     if (idRoom < 1 || idRoom > this->maintenance->movies[idMovie - 1].rooms.size()) {
-        std::cout << "ID de sala no válido." << std::endl;
+        std::cout << "ID de sala no valido." << std::endl;
         return;
     }
 
     this->maintenance->movies[idMovie - 1].rooms[idRoom - 1].showRoom();
 
     std::string input;
-    std::cout << "Ingrese la fila y columna correspondiente el asiento deseado (ej: B2), ";
-    std::cout << "Si desea reservar mas de un campo, hagalo de la siguiente manera (ej: B2-B4): ";
+    std::cout << "            **********  Formas de realizar la reserva de asientos  **********              \n ";
+    std::cout << "------------------------------------------------------------------------------------\n";
+    std::cout << "|  Para reservar mas de un campo con una rango  | Separados por un guion: B2-B4     |\n";
+    std::cout << "|  Para reserar solo un campo                   | Fila y Columna sin separar: B2    | \n";
+    std::cout << "|  Para reservar dieferentes asientos           | Separados por comas: B2,B4        |\n";
+    std::cout << "|-----------------------------------------------------------------------------------|\n" << std::endl;
+    std::cout << "   Ingrese la fila y columna correspondiente el asiento deseado: ";
     std::cin >> input;
+    
 
     std::regex singleSeatRegex(R"(([A-H][0-7]))");
     std::regex rangeSeatRegex(R"(([A-H][0-7])-([A-H][0-7]))");
@@ -192,6 +201,9 @@ std::string Reservation::generateCode(int l) {
     for (int i = 0; i < l; ++i) {
         code += caracteres[distribucion(generador)];
     }
-    std::cout << "codigo de reserva:" << code << std::endl;
+    std::cout << "--------------------------------\n";
+    std::cout << "|codigo de reserva:" << code <<std::endl;
+    std::cout << "--------------------------------\n";
+    std::cout << "Copiar este codigo si desea realizar su compra.\n";
     return code;
 }

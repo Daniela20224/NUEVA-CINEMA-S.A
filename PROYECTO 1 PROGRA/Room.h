@@ -28,7 +28,7 @@ public:
     void showRoom() const;
 
 private:
-    int number;
+    char number;
     int seats;
     int price;
 };
